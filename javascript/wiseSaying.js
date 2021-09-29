@@ -24,12 +24,12 @@ const wiseSaying = [
     }
 ]
 
-const index = Math.floor(Math.random() * wiseSaying.length)
+const indexWise = Math.floor(Math.random() * wiseSaying.length)
 
 const pSaying = document.createElement("p");
-pSaying.textContent = wiseSaying[index].saying;
+pSaying.textContent = wiseSaying[indexWise].saying;
 const pName = document.createElement("p");
-pName.textContent = wiseSaying[index].name;
+pName.textContent = wiseSaying[indexWise].name;
 
 wiseSayingDiv.append(pSaying);
 wiseSayingDiv.append(pName);
