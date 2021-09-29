@@ -43,12 +43,15 @@ function showToDoText(event) {
         newObj["text"] = textValue;
         newObj["id"] = time;
 
-        parsedList = JSON.parse(localStorage.getItem("todo"))
+        savedList = localStorage.getItem("todo")
+        if (savedList) {
+            parsedList = JSON.parse(localStorage.getItem("todo"))
+        } else {
+            parsedList = []
+        }
         parsedList.push(newObj);
         const jsonToStr = JSON.stringify(parsedList);
         localStorage.setItem("todo", jsonToStr);
-
-        
     }
 }
 
@@ -57,9 +60,10 @@ function showToDoText(event) {
 
 inputText.addEventListener("keydown", showToDoText);
 
-let parsedList = JSON.parse(localStorage.getItem("todo"))
+let savedList = localStorage.getItem("todo")
 
-if (parsedList) {
+if (savedList) {
+    let parsedList = JSON.parse(localStorage.getItem("todo"))
     parsedList.forEach((el) => {
         const pastDiv = document.createElement("div");
         const pastSpan = document.createElement("span");
