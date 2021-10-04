@@ -4,7 +4,9 @@ html, body {
     padding: 0;
     box-sizing: border-box;
 }
-
+a {
+    text-decoration: none;
+}
 ul, li {
     list-style: none;
 }
@@ -129,3 +131,15 @@ ul, li {
     margin-top: 0;
 }
 
+/* weather api 꾸미기 */
+#weather {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#weather a {
+    color: black;
+    font-size: 15px;
+}
