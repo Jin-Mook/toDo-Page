@@ -29,7 +29,7 @@ const indexWise = Math.floor(Math.random() * wiseSaying.length)
 const pSaying = document.createElement("p");
 pSaying.textContent = wiseSaying[indexWise].saying;
 const pName = document.createElement("p");
-pName.textContent = wiseSaying[indexWise].name;
+pName.textContent = `- ${wiseSaying[indexWise].name} -`;
 
 wiseSayingDiv.append(pSaying);
 wiseSayingDiv.append(pName);

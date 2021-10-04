@@ -97,3 +97,35 @@ ul, li {
     font-family: 'Ephesis', cursive;
     font-style: italic;
 } 
+
+/* list div#todo-list 부분 꾸미기 */
+#list-input #todo-list span {
+    margin-right: 10px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+#list-input #todo-list button {
+    height: 25px;
+    position: static;
+    transform: translateY(-4px);
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    cursor: pointer;
+}
+
+/* 명언 꾸미기 */
+#wise-saying {
+    font-family: 'Pacifico', cursive;
+    color: rgb(104, 50, 50);
+}
+
+#wise-saying p:first-child {
+    margin-bottom: -3px;
+    font-size: 22px;
+}
+
+#wise-saying p:last-child {
+    margin-top: 0;
+}
+
