@@ -29,8 +29,9 @@ ul, li {
 #container {
     position: fixed;
     left: 50%;
-    top: 50%;
-    transform: translate(-50%, -80%);
+    top: 0;
+    bottom: 65%;
+    transform: translate(-50%, 50%);
     text-align: center;
     width: 100%;
 }
@@ -75,5 +76,24 @@ ul, li {
     color: rgb(48, 43, 43);
 }
 
+/* list-input 부분 꾸미기 */
+#container #list-input input {
+    border: none;
+    border-bottom: solid 2px gray;
+    width: 300px;
+    height: 25px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0);
+    margin-bottom: 20px;
+}
 
-
+#container #list-input input::placeholder {
+    font-size: 35px;
+    font-weight: bold;
+    color: rgb(61, 139, 136);
+    /* color: rgb(170, 170, 204); */
+    font-family: 'Ephesis', cursive;
+    font-style: italic;
+} 
